@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<overlay id="searchtab" 
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ 
+ <statusbar id="status-bar">
+ 
+  <statusbarpanel id="searchtab-show" class="statusbarpanel-iconic" onclick="searchtabpratikpoddar.toggleView()" src="chrome://searchtab/content/icon.png"/>
+  <statusbarpanel id="searchtab-panel" style="display:none" orient="vertical" type="arrow" fade="slow">
+
+  	<textbox style="width: 145px; height: 19px; padding: 0px 0px; margin: 3px 0px;" 
+		id="searchtabexpression" 
+		onkeydown="searchtabpratikpoddar.searchtabcheckifenterispressed(event);" 
+		onfocus="this.select();" 
+		value="Search Tab" 
+		onblur="searchtabpratikpoddar.printheading();" />
+  </statusbarpanel>
+ 
+  <keyset id="mainKeyset">
+    <!-- define keyboard shortcut -->
+    <key id="key_searchtab" modifiers="control, shift" key="f" command="cmd_searchtab"/>
+  </keyset>
+
+  <commandset id="mainCommandSet">
+    <!-- command to execute for both menu item and keyboard shortcut -->
+    <command id="cmd_searchtab" oncommand="searchtabpratikpoddar.searchtabbringtofocus();"/>
+  </commandset>
+ 
+ </statusbar>
+ 
+ <script type="application/x-javascript" src="searchtab.js" />
+
+</overlay>
+

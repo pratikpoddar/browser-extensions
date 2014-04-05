@@ -1,0 +1,4 @@
+content		searchtab			chrome/content/
+locale 		searchtab	 		en		chrome/content/
+overlay		chrome://browser/content/browser.xul	chrome://searchtab/content/searchtab.xul
+

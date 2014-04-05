@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<overlay id="expressionevaluation" 
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ <statusbar id="status-bar">
+ 
+ <statusbarpanel id="calculator-panel">
+  	<textbox style="width: 150px; padding: 0px 2px; margin: 0px;" id="expression" onkeydown="expressionevaluationpratikpoddar.expressionevaluationcheckwhatispressed(event);" onfocus="this.select();" value="Expression Evaluator" onblur="expressionevaluationpratikpoddar.printheading();"/>
+   </statusbarpanel>
+  
+  <keyset id="mainKeyset">
+    <!-- define keyboard shortcut -->
+    <key id="key_expressionevaluator" modifiers="control, alt" key="e" command="cmd_expressionevaluator"/>
+  </keyset>
+
+  <commandset id="mainCommandSet">
+    <!-- command to execute for both menu item and keyboard shortcut -->
+    <command id="cmd_expressionevaluator" oncommand="expressionevaluationpratikpoddar.bringtofocus();"/>
+  </commandset>
+ 
+ </statusbar>
+ 
+ <script type="application/x-javascript" src="expressionevaluate.js" />
+
+</overlay>
+

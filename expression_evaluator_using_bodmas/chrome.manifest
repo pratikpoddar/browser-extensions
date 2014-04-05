@@ -1,0 +1,4 @@
+content		expressionevaluation			chrome/content/
+locale 		expressionevaluation 		en		chrome/content/
+overlay		chrome://browser/content/browser.xul	chrome://expressionevaluation/content/expressionevaluation.xul
+

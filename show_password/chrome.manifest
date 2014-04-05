@@ -1,0 +1,4 @@
+content		showpassword		chrome/content/
+locale 		showpassword 		en		chrome/content/
+overlay		chrome://browser/content/browser.xul	chrome://showpassword/content/showpassword.xul
+
